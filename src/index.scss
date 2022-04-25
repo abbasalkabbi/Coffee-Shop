@@ -1,5 +1,10 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(Monoton-Regular.ttf);
+    font-weight: bold;
+  }
 *,*::after,*::before{
-    border: none; margin: 0; padding: 0; box-sizing: border-box;
+    border: none; margin: 0; padding: 0; box-sizing: border-box; font-family: myFirstFont;
 }
 
 body{
@@ -30,7 +35,7 @@ body{
                         line-height:25px;
                         width: 100%;
                         font-weight: 700;
-                        font-family: Oswald,sans-serif;
+                        font-weight: bold;
                         letter-spacing: 1.5px;
                         text-transform: uppercase;
                        }
@@ -38,6 +43,22 @@ body{
             }
         }
         //END nav-item
+        // nav-logo
+        .nav-logo{
+            width: 50%;
+            height: 100%;
+            float: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+             h1{
+                 color: #fff;
+             }
+             img{
+                 width: 50px;
+             }
+        }
+        // nav-logo END
     }
     //End Nav Bar
      .container{

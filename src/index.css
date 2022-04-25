@@ -1,9 +1,16 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Monoton-Regular.ttf);
+  font-weight: bold;
+}
+
 *, *::after, *::before {
   border: none;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: myFirstFont;
 }
 
 body .navbar {
@@ -45,9 +52,32 @@ body .navbar .nav-item ul a li {
   line-height: 25px;
   width: 100%;
   font-weight: 700;
-  font-family: Oswald,sans-serif;
+  font-weight: bold;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+}
+
+body .navbar .nav-logo {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .navbar .nav-logo h1 {
+  color: #fff;
+}
+
+body .navbar .nav-logo img {
+  width: 50px;
 }
 
 body .container {
