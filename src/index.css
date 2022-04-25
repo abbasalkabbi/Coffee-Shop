@@ -80,8 +80,9 @@ body .navbar .nav-logo img {
   width: 50px;
 }
 
-body .container {
+body .home {
   width: 100vw;
-  background-color: aqua;
+  height: 90vh;
+  background-color: #c51515;
 }
 /*# sourceMappingURL=index.css.map */
