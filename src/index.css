@@ -15,7 +15,7 @@
 
 body .navbar {
   width: 100vw;
-  height: 10vh;
+  height: 60px;
   background-color: #000000;
 }
 
@@ -82,7 +82,50 @@ body .navbar .nav-logo img {
 
 body .home {
   width: 100vw;
-  height: 90vh;
-  background-color: #c51515;
+  height: calc(100vh - 60px);
+  background-color: #302f2f;
+}
+
+body .home .card {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/coffee-img.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .home .card h2 {
+  font-size: 100px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #b56230;
+}
+
+body .home .card button {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  width: 250px;
+  height: 70px;
+  font-size: 32px;
+  background-color: #b56230;
+  border-radius: 4px;
+}
+
+body .home .card button:hover {
+  cursor: pointer;
+  color: #fff;
+  -webkit-box-shadow: 7px 7px 20px 16px #b56230;
+          box-shadow: 7px 7px 20px 16px #b56230;
 }
 /*# sourceMappingURL=index.css.map */
