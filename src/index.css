@@ -220,4 +220,74 @@ body .our-menu .card-menu .card-content a {
 body .our-menu .card-menu .card-content a:hover {
   cursor: pointer;
 }
+
+body .contact {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fff;
+}
+
+body .contact h1 {
+  font-family: sans-serif;
+}
+
+body .contact form {
+  background-color: #fff;
+  width: 400px;
+  height: 400px;
+}
+
+body .contact form .div-input {
+  width: 100%;
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .contact form .div-input input, body .contact form .div-input #content {
+  font-family: sans-serif;
+  text-align: center;
+  width: 80%;
+  height: 40px;
+  background-color: #fff;
+  border: solid #dbdbdb 1px;
+}
+
+body .contact form .div-input input:focus, body .contact form .div-input #content:focus {
+  outline: none;
+}
+
+body .contact form .div-input #content {
+  height: 80px;
+}
+
+body .contact form .div-input #send {
+  width: 40%;
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+body .contact form .div-input #send:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=index.css.map */

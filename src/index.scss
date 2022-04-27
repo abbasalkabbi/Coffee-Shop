@@ -163,4 +163,59 @@ body{
 
     }
     //End our-menu
+    //contact
+    .contact{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #fff;
+        h1{
+            font-family: sans-serif;
+
+       }
+        //form
+        form{
+            background-color: #fff;
+            width: 400px;
+            height: 400px;
+            // div input
+            .div-input{
+                width: 100%;
+                height: 25%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                //input
+                 input,#content{
+                     font-family: sans-serif;
+                     text-align: center;
+                     width: 80%;
+                     height: 40px;
+                     background-color:#fff ;
+                     border: solid #dbdbdb 1px;
+                 }
+                 input:focus,#content:focus{
+                     outline: none;
+                 }
+                 #content{
+                     height: 80px;
+                 }
+                 #send{
+                     width: 40%;
+                     background-color: #0d6efd;
+                     color: #fff;
+                 }
+                 #send:hover{
+                     cursor: pointer;
+                 }
+                //End input
+            }
+            // ENd div input
+        }
+        //form End
+    }
+    //End contact
 }
