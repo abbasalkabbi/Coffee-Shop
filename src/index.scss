@@ -218,4 +218,43 @@ body{
         //form End
     }
     //End contact
+    //about
+    .about{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+        h1{
+            margin: 10px;
+            text-align: center;
+            font-family: sans-serif;
+        }
+        p{
+            font-family: sans-serif;
+            width: 50%;
+            text-align: center;
+        }
+        //social media
+        .social-media{
+            margin: 10px auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                margin: auto 20px;
+                text-decoration: none;
+                color: #000000;
+                li{
+                    list-style: none;
+                    font-family: sans-serif;
+                }
+            }
+        }
+        //End social media
+
+    }
+    //End about
 }

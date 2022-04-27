@@ -290,4 +290,59 @@ body .contact form .div-input #send {
 body .contact form .div-input #send:hover {
   cursor: pointer;
 }
+
+body .about {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .about h1 {
+  margin: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+body .about p {
+  font-family: sans-serif;
+  width: 50%;
+  text-align: center;
+}
+
+body .about .social-media {
+  margin: 10px auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .about .social-media a {
+  margin: auto 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+body .about .social-media a li {
+  list-style: none;
+  font-family: sans-serif;
+}
 /*# sourceMappingURL=index.css.map */
