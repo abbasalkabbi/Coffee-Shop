@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script
+    src="https://kit.fontawesome.com/1e8b2b2c28.js"
+    crossorigin="anonymous"
+  ></script>
     <!--Style-->
     <link rel="stylesheet" href="./src/index.css">
     <!--END Style-->
@@ -22,25 +25,37 @@
        <!--Nav item-->
        <div class="nav-item">
            <ul>
-               <a href="">
+               <a href="#home">
                    <li>Home</li>
                </a>
                <a href="#our-menu">
                 <li>Our Menu</li>
                </a>
-               <a href="">
-                <li>About</li>
-               </a>
-               <a href="">
+               <a href="#contact">
                 <li>Contact</li>
+               </a>
+               <a href="#about">
+                <li>About</li>
                </a>
            </ul>
        </div>
        <!--End Nav item-->
     </div>
     <!---Nav Bar-->
+    <!---navbar-moblie-->
+        <menu><img src="./assets/menu.png" alt="" onclick="menubutton()"></menu>
+        <div class="menu-nav">
+        <img src="./assets/cancel.png" alt=" " onclick="menubuttonclose()">
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#our-menu"><li>Skills</li></a>
+            <a href="#contact"><li>Contact</li></a>
+            <a href="#about"><li>About</li></a>
+          </ul>
+        </div>
+    <!---End navbar-moblie-->
     <!---Home-->
-    <div class="home">
+    <div class="home" id="home">
      <div class="card">
            <h2>Coffee is My Live</h2>
            <a href="#our-menu"> Our Menu</a>
@@ -127,7 +142,7 @@
     </div>
     <!--End our-menu-->
     <!--contact-->
-    <div class="contact">
+    <div class="contact" id="contact">
         <h1>Contact Us</h1>
         <form action="">
             <!--input div Name-->
@@ -154,7 +169,7 @@
     </div>
     <!--END contact-->
     <!---About-->
-    <div class="about">
+    <div class="about" id="about">
     <h1>About Coffee Shop</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sed quam cumque
         quisquam animi voluptas. Et distinctio nisi quisquam. Maiores, consectetur temporibus.
@@ -176,5 +191,6 @@
     <!--End social media-->
     </div>
    <!--End About-->
+   <script src="./app.js"></script>
 </body>
 </html>

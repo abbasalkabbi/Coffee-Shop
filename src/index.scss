@@ -6,8 +6,21 @@
 *,*::after,*::before{
     border: none; margin: 0; padding: 0; box-sizing: border-box; font-family: myFirstFont;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
+    overflow-x:hidden;
+    //moblie
+    menu {
+        display: none;
+
+    }
+    .menu-nav{
+        display: none;
+    }
+    //moblie end
     //Nav Bar
     .navbar{
         width: 100vw;
@@ -179,7 +192,7 @@ body{
         //form
         form{
             background-color: #fff;
-            width: 400px;
+            width: 80%;
             height: 400px;
             // div input
             .div-input{
@@ -250,6 +263,7 @@ body{
                 li{
                     list-style: none;
                     font-family: sans-serif;
+                    font-weight: bolder;
                 }
             }
         }
@@ -257,4 +271,104 @@ body{
 
     }
     //End about
+}
+@media screen and (max-width:700px ) {
+body{
+    overflow-x: hidden;
+      //Nav Bar
+    .navbar{
+        display: none;
+    }
+    menu {
+        display: block;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        img{
+            width: 50px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+        }
+    }
+    .menu-nav{
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
+        position: fixed;
+        z-index: 99;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 50px;
+            position: absolute;
+            top: 30px;
+            right: 30px;
+          }
+        ul {
+            list-style: none;
+            a {
+              text-decoration: none;
+              background-color: #000;
+              color: #fff;
+              font-size: 20px;
+              width: 200px;
+              height: 40px;
+              margin: 10px auto;
+              border: 1px solid #fff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              li{
+                font-family: sans-serif;
+              }
+            }
+          }
+    }
+    //End Nav Bar
+    //home
+    .home{
+        .card{
+          h2{
+              font-size: 20px;
+              margin-bottom: 20px;
+          }
+        }
+    }
+    //end home
+     //our-menu
+     .our-menu{
+        height: 100%;
+        flex-direction: column;
+        .card-menu:last-of-type{
+         margin-bottom: 100px;
+        }
+     }
+     //our-menu
+
+}
+}
+@media screen and (max-width:1000px ) and (min-width:700px){
+ //our-menu
+ .our-menu{
+flex-wrap: wrap
+ }
+  //our-menu
+  //about
+  .about{
+   h1{
+   font-size: 100px;
+   }
+   p{
+       font-size: 30px;
+   }
+   a{
+       li{
+           font-size: 30px;
+       }
+   }
+  }
+   //about End
 }
